@@ -1,0 +1,128 @@
+@charset "UTF-8"; 
+/* --- 通用 --- */
+
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+} /* 重置浏览器默认样式 */
+
+html {
+  background: url(E:/Picture/PLMM/DRAW/北尘lion/a6acc28aly1fzk33eftn8j23gg2kk16g.jpg) 
+  no-repeat fixed center center; 
+  background-size: contain; 
+  background-color: #f9f9f9; 
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 1000px; 
+  margin: 0 auto; 
+  font: 14px/1.7em 'PT Sans','Open Sans','Lucida Sans Unicode','Lucida Grande','Hiragino Sans GB','Microsoft YaHei','SimHei', serif; /* font为简写属性，设置字号/行距及字体 */
+  color: #121212; /* 设置全局通用的文本颜色 */
+  -webkit-font-smoothing: antialiased; /* CSS3中用于设置webkit内核浏览器字体抗锯齿属性，只对MacOS的Webkit有效 */
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 16.66% 10px;
+  width: 100%;
+}
+
+img {
+  float: right;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; 
+  max-height: 150px; 
+  max-width: 150px; 
+}
+
+h3 {
+  font-size: 18px; 
+  margin-bottom: -10px; 
+}
+
+article {
+  position: relative;
+  max-width: 1980px;
+  margin: 0 auto;
+  right: 0px;/* 修改左部时间条左靠程度 */
+}
+
+.timeline__nav {
+  position: fixed;
+  z-index: 99;
+  top: 10;
+  transition: top .3s ease-out;
+}
+.timeline__nav ul {
+  list-style: none;
+  list-style-position: inside;
+  margin: 15px 0;
+}
+.timeline__nav ul li {
+  margin: 13px 0;
+  padding-left: 0;
+  list-style-type: none;
+  color: #bfc1c3;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  cursor: pointer; /* 鼠标呈手指形状 */
+  transition: all .3s ease-out;
+}
+.timeline__nav ul li.active {
+  font-weight: bold;
+  color: #f94125;
+  border-bottom: 1px dotted transparent;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.timeline__nav ul li:hover {
+  color: #000;
+}
+
+
+hr { 
+  border-bottom: 1px solid rgba(100,130,170,0.5); 
+  border-top: 0; 
+  clear: both; 
+  margin: 20px 0; 
+} /* 设置水平分割线的通用属性 */
+
+
+/* --- 布局 --- */
+header { 
+  text-align: center; 
+} /* 设置页头的样式 */
+
+.intro { 
+  padding: 10px ; 
+  margin-bottom: 0px; 
+  color: rgba(100,130,170,1); 
+}
+.intro p { 
+  font: 15px/2em 'SIMYOU' 
+} /* 单独设置所有class="intro"的元素中的p元素的样式 */
+
+
+hr.hrh { 
+  margin-top: 0; 
+  margin-bottom: 8px; 
+} /* 标题栏下方专用的水平线，与通用水平线样式有区别 */
+
+footer { 
+  clear: both; 
+  display: block; 
+  text-align: center; 
+} /* 设置页脚的样式 */
