@@ -10,7 +10,7 @@ html, body {
 } /* 重置浏览器默认样式 */
 
 html {
-  background: url(img\background.jpg) 
+  background: url("../img/background.jpg") 
   no-repeat fixed center center; 
   background-size: contain; 
   background-color: #f9f9f9; 
